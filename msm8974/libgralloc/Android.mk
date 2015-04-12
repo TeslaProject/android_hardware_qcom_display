@@ -40,6 +40,6 @@ LOCAL_C_INCLUDES              := $(common_includes) $(kernel_includes)
 LOCAL_SHARED_LIBRARIES        := $(common_libs) libqdutils libdl
 LOCAL_CFLAGS                  := $(common_flags) -DLOG_TAG=\"qdmemalloc\"
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps) $(kernel_deps)
-LOCAL_SRC_FILES               := ionalloc.cpp alloc_controller.cpp
+LOCAL_SRC_FILES               := alloc_controller.cpp
 
 include $(BUILD_SHARED_LIBRARY)
